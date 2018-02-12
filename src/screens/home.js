@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
-import { Text, View, ActivityIndicator, Alert } from 'react-native';
-import { Container, Header, Body, Title, Content, List, ListItem } from 'native-base';
+import { Text, View, ActivityIndicator, Alert, Image } from 'react-native';
+import { Container, Header, Left, Body, Title, Content, List, ListItem, Button, Icon } from 'native-base';
 
 import Modal from '../components/modal';
 import DataItem from '../components/list_item';
@@ -69,9 +69,15 @@ export class HomeScreen extends PureComponent {
             )
         return (
             <Container>
-                <Header>
+                <Header backgroundColor="#38618C" >
+                    <Left>
+                     <Button transparent>
+                            <Image style={{ tintColor:'#FFFFFF', width: 26, height: 18 }} 
+                                    source={require('../images/menu-alt-256.png') } />
+                     </Button>
+                    </Left>
                     <Body>
-                        <Title children="RN NewsApp" />
+                        <Title children="Akhbar So9" />
                     </Body>
                 </Header>
                 <Content
